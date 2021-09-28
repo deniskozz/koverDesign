@@ -1,46 +1,97 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
-    list-style: none;
-    padding: 0;
-    width: 250px; 
-    height: 40px; 
-    background: #95C11F;
-  }
+  list-style: none;
+  padding: 0;
+  height: 40px;
+}
 
-  .navigation .main {
-    display: block; 
-    height: 40px;
-    font: bold 15px/40px arial, sans-serif; 
-    text-align: center; 
-    text-decoration: none; 
-    color: rgb(0, 0, 0);  
-    transition: 0.2s ease-in-out;
-  }
+.navigation .main {
+  display: block;
+  height: 40px;
+  font: bold 15px/40px arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease-in-out;
+}
 
-  .navigation li { 
-    width: 250px; 
-    height: 40px;
-    background: #F7F7F7;
-    font: normal 12px/40px arial, sans-serif; 
-    color: #999;
-    text-align: center;
-    margin: 0;
-    transform-origin: 0% 0%;
-    transform: rotateX(90deg);
-  }
+.navigation li {
+  height: 40px;
+  background: #F7F7F7;
+  font: normal 12px/40px arial, sans-serif;
+  color: #999;
+  text-align: center;
+  margin: 0;
+  transform-origin: 0% 0%;
+  transform: rotateX(90deg);
+}
 
-  .navigation .n { 
-    transition: 0s ease-in-out ;
-  }
+.navigation .n {
+  transition: 0s ease-in-out;
+}
 
-  .navigation:hover li {
-    transform: rotateX(0deg);
-    transition: 0.1s ease-in-out ;
-  }
+.navigation:hover li { 
+  transform: rotateX(0deg);
+  transition: 0.1s ease-in-out;
+}
 
-  
+.header__main {
+  padding: 30px 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.links-main a:not(:last-child){
+  margin-right: 35px;
+}
+
+.link-letter{
+  margin-right: 10px;
+}
+
+.logo img{
+  height: 50px;
+}
+
+.link-letter img{
+  height: 40px;
+}
+
+.header__link-contacts{
+  margin-right: 35px;
+}
+
+.links__case-second {
+  border: 0px 1px 0px 1px black solid;
+}
+
+.links__case-second a:first-child{
+  margin-right: 35px;
+}
+
+.links__case-third a:not(:last-child){
+  margin-right: 35px;
+}
+
+.header__links{
+  background-color: #f5f5f5;
+}
