@@ -6,92 +6,110 @@
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1160px;
   margin: 0 auto;
+}
+
+header{
+  font-size: 0.7em;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navigation {
-  list-style: none;
-  padding: 0;
-  height: 40px;
-}
-
-.navigation .main {
-  display: block;
-  height: 40px;
-  font: bold 15px/40px arial, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  transition: 0.2s ease-in-out;
-}
-
-.navigation li {
-  height: 40px;
-  background: #F7F7F7;
-  font: normal 12px/40px arial, sans-serif;
-  color: #999;
-  text-align: center;
-  margin: 0;
-  transform-origin: 0% 0%;
-  transform: rotateX(90deg);
-}
-
-.navigation .n {
-  transition: 0s ease-in-out;
-}
-
-.navigation:hover li { 
-  transform: rotateX(0deg);
-  transition: 0.1s ease-in-out;
+  white-space: nowrap;
 }
 
 .header__main {
-  padding: 30px 0;
+  padding: 1em 0;
 }
 
 a{
   text-decoration: none;
+  color: #000;
 }
 
 .links-main a:not(:last-child){
-  margin-right: 35px;
+  margin-right: 2.3em;
 }
 
 .link-letter{
-  margin-right: 10px;
-}
-
-.logo img{
-  height: 50px;
-}
-
-.link-letter img{
-  height: 40px;
+  margin-right: 0.8em;
 }
 
 .header__link-contacts{
-  margin-right: 35px;
-}
-
-.links__case-second {
-  border: 0px 1px 0px 1px black solid;
-}
-
-.links__case-second a:first-child{
-  margin-right: 35px;
-}
-
-.links__case-third a:not(:last-child){
-  margin-right: 35px;
+  margin-right: 2.3em;
 }
 
 .header__links{
   background-color: #f5f5f5;
+  padding: 0.8em 0;
+}
+
+.n{/* !!!!!!!!!!!!!!!!!!!!!! */
+  display: none;
+}
+
+.links__case-first a{
+  margin-right: 2.3em;
+}
+
+.links__case-second{
+  padding: 0.5em 2.5em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.links__case-second a:first-child{
+  margin-right: 2.3em;
+}
+
+.links__case-third a{
+  margin-left: 2em;
+}
+
+.tree{
+  height: 40px;
+  padding: 0.8em 0;
+}
+
+.hero{
+  background-color: #f5f5f5;
+}
+
+.hero__text{
+  padding: 50px;
+  width: 50%;
+}
+
+h1{
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.hero__text p{
+  font-size: 0.7em;
+  margin-bottom: 3em;
+}
+
+.button{
+  padding: 10px 23px ;
+  border-radius: 30px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.button-attention{
+  background-color: #fe3501;
+  color: white;
+  margin-right: 1.3em;
+}
+
+.button-common{
+  color: #fe3501;
+}
+
+.button-common:hover{
+  background-color: #e9e9e9;
 }
