@@ -21,6 +21,10 @@ header {
   white-space: nowrap;
 }
 
+header a{
+  font-size: 1.3em;
+}
+
 .header__main {
   padding: 1em 0;
 }
@@ -300,4 +304,51 @@ h1 {
 
 .delivery-info a:hover{
   background-color: #fe3401b4;
+}
+
+.inner-header{
+  border: 1px solid black;
+  border-radius: 30px;
+  
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button{
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.slider-button:focus{
+  background-color: #fe3501;
+  color: #f5f5f5;
+}
+
+.slider-button:focus:first-child{
+  border-radius: 30px 0 0 30px;
+}
+
+.slider-button:focus:last-child{
+  border-radius: 0 30px 30px 0;
+}
+
+.slider-content{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.slider-content-none > div{
+  display: none;
+}
+
+.slider-content-visible{
+  display: flex !important;
 }
