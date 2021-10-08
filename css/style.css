@@ -22,7 +22,7 @@ header {
 }
 
 header a{
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .header__main {
@@ -316,8 +316,8 @@ h1 {
 }
 
 .slider-button{
-  padding: 10px 30px;
-  font-size: 1em;
+  padding: 10px 40px;
+  font-size: 0.7em;
   font-weight: 600;
   border: none;
   text-align: center;
@@ -327,6 +327,7 @@ h1 {
 
 .slider-button:focus{
   background-color: #fe3501;
+  border: none;
   color: #f5f5f5;
 }
 
@@ -338,17 +339,54 @@ h1 {
   border-radius: 0 30px 30px 0;
 }
 
-.slider-content{
+.slider-content-visible{
+  display: block !important;
+}
+
+.slider-content-1{
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  
+  font-size: 0.7em;
+}
+
+.content-1{
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  justify-content: space-between;
+  margin-right: 3em;
+}
+
+.content-2{
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  justify-content: space-between;
+}
+
+.content-1 p, .content-2 p{
+  margin-bottom: 1.7em;
 }
 
 .slider-content-none > div{
   display: none;
 }
 
-.slider-content-visible{
-  display: flex !important;
+.slider h2{
+  margin-top: 3em;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+.slider-content-2{
+  padding: 2em 0;
+}
+
+.slider-content-2 li{
+  list-style: none;
+  margin-bottom: 2em;
+  font-size: 0.7em;
+  border-bottom: 1px solid black;
 }
